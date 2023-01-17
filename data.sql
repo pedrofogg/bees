@@ -1,0 +1,1 @@
+CREATE DATABASE IF NOT EXISTS bees_api_d;

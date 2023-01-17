@@ -1,0 +1,26 @@
+type Carro {
+	id: ID!
+	marca: String
+	modelo: String
+	disponivel: Boolean
+}
+
+
+type DadosCadastroRetornoComIdDto {
+	id: ID!
+	marca: String
+	modelo: String
+	disponivel: Boolean
+}
+
+
+# Root
+type Query {
+	findAllCarros: [Carro]!
+	countCarros: Long!
+}
+
+# Root
+type Mutation {
+	salvarCarro(marca: String, modelo: String): DadosCadastroRetornoComIdDto!
+}
